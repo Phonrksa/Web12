@@ -1,144 +1,721 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <title>SX25</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/3840px-Google_%22G%22_logo.svg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <head>
-        <title> SX25</title>
-        <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/3840px-Google_%22G%22_logo.svg.png ">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; }
 
-        <style>
-            .institute-name {
-                font-family: "Battambang", sans-serif;
-            }
-        </style>
-    </head>
-    <body bgcolor="pink" text="white">
-        <div class="gtranslate_wrapper"></div>
-          <script>window.gtranslateSettings = {"default_language":"en","languages":["en","km","zh-CN","pt"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","float_switcher_open_direction":"left","flag_style":"3d"}</script>
-           <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+        body {
+            margin: 0;
+            font-family: "Battambang", Georgia, serif;
+            background: linear-gradient(180deg, #ffb6c1 0%, #ffc8d4 100%);
+            color: #333;
+            line-height: 1.6;
+        }
 
-        <center>
-               
-            <img src="https://www.kozzy.online/logo-kozzyjpg.jpg" width="200">
-        
-        <h1>Group: SX25</h1>
-        <h1>Name: PHON REAKSA </h1>
-        <hr>
-       
-    
-    <head>
-    <body leftmargin="50" text="blue">
-        <h1 align="center">
-            <font color="blue" class="institute-name">
-                <u>
-                    វីទ្យាស្ថានសុីតិច
-                
-                </u>
-            </font>
-        </h1>
-        
-        <marquee bgcolor="cornsilk"
-        behavior="scroll" width="50% " direction = "right" >
-    <h3>Name:PHON REAKSA</h3></marquee><marquee bgcolor="cornsilk"
-    behavior="scroll" width="50% " direction = "left">
-<h3>Name:PHON REAKSA</h3>
-</marquee>
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
+        .header {
+            text-align: center;
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+        }
 
+        .header img { border-radius: 8px; }
+        .header h3 { margin: 8px 0; color: #c2185b; }
 
+        .institute-name {
+            color: #1565c0;
+            text-decoration: underline;
+            margin: 12px 0 0;
+        }
 
-    
+        .section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
 
+        .section h1,
+        .section h2 {
+            text-align: center;
+            color: #c2185b;
+            margin-top: 0;
+        }
 
-        </center>
-        <hr size=5 color="green" width="50%" align="right">
-        <p align="justify">
-            <img src="Star20_ByLeng_Design.png" width="100" align="left" 
-     hspace=10 vaspace=10>
-     
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, delectus quis maxime architecto in laborum quo cupiditate asperiores! Illum reiciendis facere veniam minus sint sequi neque quisquam ut harum excepturi!
+        .section p { text-align: justify; }
+        .section p img { border-radius: 8px; }
 
-            
-            
-        <p align="justify">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam enim eius distinctio rerum quod culpa recusandae, ducimus vero voluptatibus dolorum quam, facilis veniam veritatis soluta sint et debitis, adipisci laborum.
+        .social-links { text-align: center; }
 
-        </p>
-        
-        <p align="justify">
-            <img src="Star20_ByLeng_Design.png" width="100" align="right" 
-     hspace=10 vaspace=10>
-     
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 18px;
+            background: #1565c0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+        }
 
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae mollitia maxime voluptatem repellat nihil, fuga quaerat ab vel id odio sit aut distinctio est numquam repudiandae iste necessitatibus consequuntur incidunt.
+        .social-links a:hover { background: #0d47a1; }
 
-        </p>
-        <hr size=5 color="green" width="50%" align="left">
+        .list-box {
+            max-width: 420px;
+            margin: 0 auto;
+            text-align: left;
+        }
 
-        <div> 
-            
+        .list-box ol,
+        .list-box ul { padding-left: 24px; }
 
-        </div><h1>
-    My Social Media:
-    <a href="https://t.me/" class="telegram">✈</a>
-</h1>
+        .list-box li { margin: 6px 0; }
 
-<h1>Using Mixed Ol &amp; Ul</h1>
+        .list-box a {
+            color: #1565c0;
+            font-weight: 700;
+        }
 
-<ol>
-    <li>
-        <a href="https://www.kozzy.online/">MIS</a>
+        .map-section { text-align: center; }
 
-        <ul>
-            <li>
-                WEB Developer
-                <ul style="list-style-type:square;">
-                    <li>Front-End</li>
-                    <li>Back-End</li>
-                    <li>Full-Stack</li>
+        .map-note {
+            color: #1565c0;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .map-wrapper {
+            display: inline-block;
+            position: relative;
+            max-width: 100%;
+            width: 100%;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(21, 101, 192, 0.15);
+            border: 4px solid #1565c0;
+        }
+
+        .map-toolbar {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .map-toolbar button {
+            font-family: "Battambang", Georgia, serif;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background: #1565c0;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .map-toolbar button:hover { background: #0d47a1; }
+
+        .map-scroll {
+            overflow: auto;
+            max-width: 100%;
+            border-radius: 12px;
+            background: #f5f5f5;
+            padding: 8px;
+        }
+
+        #map-scale {
+            transform-origin: top center;
+            transition: transform 0.2s ease;
+        }
+
+        #cambodia-map {
+            width: 799px;
+            max-width: none;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        #map-hit-layer {
+            cursor: pointer;
+        }
+
+        #map-label {
+            margin-top: 14px;
+            color: #1565c0;
+            font-weight: 700;
+            font-size: 18px;
+            min-height: 28px;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 8px;
+        }
+
+        .map-legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 16px;
+            font-size: 13px;
+        }
+
+        .map-legend span {
+            padding: 6px 12px;
+            border-radius: 20px;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .leg-north { background: #fff9c4; }
+        .leg-west { background: #c8e6c9; }
+        .leg-central { background: #ffccbc; }
+        .leg-east { background: #e1bee7; }
+        .leg-south { background: #b3e5fc; }
+        .leg-capital { background: #f8bbd0; }
+
+        .province-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .province-table th,
+        .province-table td {
+            border: 1px solid #f8bbd0;
+            padding: 8px 10px;
+            text-align: left;
+        }
+
+        .province-table th {
+            background: #fce4ec;
+            color: #c2185b;
+        }
+
+        .province-table tr:nth-child(even) { background: #fff5f8; }
+
+        .province-table a {
+            color: #1565c0;
+            text-decoration: none;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .province-table a:hover { text-decoration: underline; }
+
+        .table-wrap { overflow-x: auto; }
+
+        #province-box {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background: #fce4ec;
+            border-radius: 8px;
+            border: 2px solid #c2185b;
+        }
+
+        #province-box h3 {
+            color: #c2185b;
+            margin-top: 0;
+        }
+
+        #province-box .region-tag {
+            display: inline-block;
+            background: #1565c0;
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .region-group {
+            margin-top: 24px;
+            text-align: left;
+        }
+
+        .region-group h4 {
+            color: #c2185b;
+            border-bottom: 2px solid #f8bbd0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+
+        .region-group ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .region-group li {
+            padding: 6px 0;
+            border-bottom: 1px solid #fce4ec;
+        }
+
+        .region-group a {
+            color: #1565c0;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .region-group a:hover { text-decoration: underline; }
+
+        .video-section {
+            text-align: center;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            aspect-ratio: 16 / 9;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #f8bbd0;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            background: #000;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000;
+        }
+
+        .video-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .video-controls button {
+            font-family: "Battambang", Georgia, serif;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #1565c0;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .video-controls button:hover {
+            background: #0d47a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = {"default_language":"en","languages":["en","km","zh-CN","pt"],"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","float_switcher_open_direction":"left","flag_style":"3d"}</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+    <div class="page">
+
+        <header class="header">
+            <img src="Untitled design.png" width="200" alt="Logo">
+            <h3>Group: SX25</h3>
+            <h3>Name: PHON REAKSA</h3>
+            <h1 class="institute-name">វិទ្យាស្ថានស៊ីតិក</h1>
+        </header>
+
+        <section class="section">
+            <p>
+                <img src="Star20_ByLeng_Design.png" width="100" align="left" hspace="10" vspace="10" alt="">
+                Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign. Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+            </p>
+            <p>
+                <img src="Star20_ByLeng_Design.png" width="100" align="right" hspace="10" vspace="10" alt="">
+                Video provides a powerful way to help you prove your point. When you click Online Video, you can paste in the embed code for the video you want to add. You can also type a keyword to search online for the video that best fits your document. To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want from the different galleries. Themes and styles also help keep your document coordinated. When you click Design and choose a new Theme, the pictures, charts, and SmartArt graphics change to match your new theme. When you apply styles, your headings change to match the new theme. Save time in Word with new buttons that show up where you need them. To change the way a picture fits in your document, click it and a button for layout options appears next to it. When you work on a table, click where you want to add a row or a column, and then click the plus sign. Reading is easier, too, in the new Reading view. You can collapse parts of the document and focus on the text you want. If you need to stop reading before you reach the end, Word remembers where you left off - even on another device.
+            </p>
+        </section>
+
+        <section class="section social-links">
+            <h2>My Social Media</h2>
+            <a href="https://t.me/kozzy_cambodia"><i class="fab fa-telegram"></i> Telegram</a>
+            <a href="https://www.tiktok.com/@kozzy.cambodia?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i> Tiktok</a>
+        </section>
+
+        <section class="section">
+            <h1>Using Mixed Ol &amp; Ul</h1>
+            <div class="list-box">
+                <ol>
+                    <li>
+                        <a href="#">MIS</a>
+                        <ul>
+                            <li>
+                                WEB Devloper
+                                <ul style="list-style-type:square;">
+                                    <li>Front-End</li>
+                                    <li>Back-End</li>
+                                    <li>Full-Stack</li>
+                                </ul>
+                            </li>
+                            <li>Mobile Devloper</li>
+                            <li>UX/UI</li>
+                        </ul>
+                    </li>
+                    <li>
+                        BIT
+                        <ul>
+                            <li>Digital Marketing</li>
+                            <li>Accountant</li>
+                            <li>UX/UI</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>User order List</h2>
+            <div class="list-box">
+                <ol type="I" start="10">
+                    <li>Heading I</li>
+                    <li>Heading II</li>
+                    <li>Heading III</li>
+                    <li>Heading IV</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>User Unorder List</h2>
+            <div class="list-box">
+                <ul>
+                    <li>Heading I</li>
+                    <li>Heading II</li>
+                    <li>Heading III</li>
+                    <li>Heading IV</li>
                 </ul>
-            </li>
+            </div>
+        </section>
 
-            <li>Mobile Developer</li>
-            <li>UX/UI</li>
-        </ul>
-    </li>
+        <section class="section video-section">
+            <h2>Video</h2>
+            <div class="video-wrapper" id="video-container">
+                <video id="site-video" src="videoplayback.mp4" controls playsinline></video>
+            </div>
+            <div class="video-controls">
+                <button type="button" onclick="toggleVideoFullscreen()">
+                    <i class="fas fa-expand"></i> Fullscreen
+                </button>
+            </div>
+        </section>
 
-    <li>
-        <a href="https://www.kozzy.online/">BIT</a>
+        <section class="section map-section">
+            <h2>Map Of Cambodia</h2>
+            <p class="map-note">ផែនទីខេត្តកម្ពុជា — ចង្អុលកណ្តាលខេត្ត រួចចុចដើម្បីមើលព័ត៌មានខេត្តនោះ</p>
 
-        <ul>
-            <li>Digital Marketing</li>
-            <li>Accountant</li>
-            <li>UX/UI</li>
-        </ul>
-    </li>
-</ol>
+            <div class="map-wrapper">
+                <div class="map-toolbar">
+                    <button type="button" onclick="zoomMap(1.25)">Zoom +</button>
+                    <button type="button" onclick="zoomMap(1)">100%</button>
+                    <button type="button" onclick="zoomMap(0.85)">Zoom −</button>
+                </div>
+                <div class="map-scroll">
+                    <div id="map-scale">
+                        <svg id="cambodia-map" viewBox="0 0 799 719" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="799" height="719" fill="#ffffff"/>
+                            <image href="cambodia-map-clear.png" x="0" y="0" width="799" height="719" pointer-events="none"/>
+                            <rect id="map-hit-layer" width="799" height="719" fill="transparent"/>
+                        </svg>
+                    </div>
+                </div>
+                <!-- <p id="map-label">ចង្អុល ឬចុចលើខេត្តនៅលើផែនទី</p>
+                <div class="map-legend">
+                    <span class="leg-north">ភាគខាងជើង</span>
+                    <span class="leg-west">ភាគខាងលិច</span>
+                    <span class="leg-central">ភាគកណ្តាល</span>
+                    <span class="leg-east">ភាគខាងកើត</span>
+                    <span class="leg-south">ភាគខាងត្បូង</span>
+                    <span class="leg-capital">រាជធានី</span>
+                </div>
+            </div>
 
-<div class="section">
-    <h1>User order List</h1>
+            <div id="province-box">
+                <span id="province-region" class="region-tag"></span>
+                <h3 id="province-title"></h3>
+                <p id="province-desc"></p>
+                <p><a id="province-wiki" href="#" target="_blank">Wikipedia</a></p>
+            </div>
 
-    <ol type="I" start="10">
-        <li>Heading I</li>
-        <li>Heading II</li>
-        <li>Heading III</li>
-        <li>Heading IV</li>
-    </ol>
-</div>
+            <h3 class="institute-name">បញ្ជីខេត្តទាំងអស់ (តាមតំបន់)</h3>
 
-<div class="section">
-    <h1>User Unorder List</h1>
+            <div class="region-group">
+                <h4>ភាគខាងជើង</h4>
+                <ul>
+                    <li><a onclick="showProvince('oddar_meanchey')">ឧត្តរមានជ័យ / Oddar Meanchey</a></li>
+                    <li><a onclick="showProvince('preah_vihear')">ព្រះវិហារ / Preah Vihear</a></li>
+                    <li><a onclick="showProvince('stung_treng')">ស្ទឹងត្រែង / Stung Treng</a></li>
+                </ul>
+            </div>
 
-    <ul>
-        <li>Heading I</li>
-        <li>Heading II</li>
-        <li>Heading III</li>
-        <li>Heading IV</li>
-    </ul>
-</div>
+            <div class="region-group">
+                <h4>ភាគខាងលិច</h4>
+                <ul>
+                    <li><a onclick="showProvince('banteay_meanchey')">បន្ទាយមានជ័យ / Banteay Meanchey</a></li>
+                    <li><a onclick="showProvince('battambang')">បាត់ដំបង / Battambang</a></li>
+                    <li><a onclick="showProvince('pailin')">ប៉ៃលិន / Pailin</a></li>
+                    <li><a onclick="showProvince('pursat')">ពោធិ៍សាត់ / Pursat</a></li>
+                    <li><a onclick="showProvince('siem_reap')">សៀមរាប / Siem Reap</a></li>
+                    <li><a onclick="showProvince('koh_kong')">កោះកុង / Koh Kong</a></li>
+                </ul>
+            </div>
 
-<body>        
+            <div class="region-group">
+                <h4>ភាគកណ្តាល</h4>
+                <ul>
+                    <li><a onclick="showProvince('kampong_thom')">កំពង់ធំ / Kampong Thom</a></li>
+                    <li><a onclick="showProvince('kampong_chhnang')">កំពង់ឆ្នាំង / Kampong Chhnang</a></li>
+                    <li><a onclick="showProvince('kampong_cham')">កំពង់ចាម / Kampong Cham</a></li>
+                    <li><a onclick="showProvince('kampong_speu')">កំពង់ស្ពឺ / Kampong Speu</a></li>
+                    <li><a onclick="showProvince('kandal')">កណ្តាល / Kandal</a></li>
+                    <li><a onclick="showProvince('tbong_khmum')">ត្បូងឃ្មុំ / Tbong Khmum</a></li>
+                    <li><a onclick="showProvince('phnom_penh')">ភ្នំពេញ / Phnom Penh (រាជធានី)</a></li>
+                </ul>
+            </div>
 
+            <div class="region-group">
+                <h4>ភាគខាងកើត</h4>
+                <ul>
+                    <li><a onclick="showProvince('kratie')">ក្រចេះ / Kratie</a></li>
+                    <li><a onclick="showProvince('mondulkiri')">មណ្ឌលគិរី / Mondulkiri</a></li>
+                    <li><a onclick="showProvince('ratanakiri')">រតនគិរី / Ratanakiri</a></li>
+                </ul>
+            </div>
+
+            <div class="region-group">
+                <h4>ភាគខាងត្បូង</h4>
+                <ul>
+                    <li><a onclick="showProvince('prey_veng')">ព្រៃវែង / Prey Veng</a></li>
+                    <li><a onclick="showProvince('svay_rieng')">ស្វាយរៀង / Svay Rieng</a></li>
+                    <li><a onclick="showProvince('takeo')">តាកែវ / Takeo</a></li>
+                    <li><a onclick="showProvince('kampot')">កំពត / Kampot</a></li>
+                    <li><a onclick="showProvince('kep')">កែប / Kep</a></li>
+                    <li><a onclick="showProvince('preah_sihanouk')">ព្រះសីហនុ / Preah Sihanouk</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div> --> -->
+
+    <script>
+        var provinceData = {
+            banteay_meanchey: { en: "Banteay Meanchey", kh: "បន្ទាយមានជ័យ", region: "ភាគខាងលិច", wiki: "Banteay_Meanchey_province" },
+            battambang: { en: "Battambang", kh: "បាត់ដំបង", region: "ភាគខាងលិច", wiki: "Battambang_province" },
+            kampong_cham: { en: "Kampong Cham", kh: "កំពង់ចាម", region: "ភាគកណ្តាល", wiki: "Kampong_Cham_province" },
+            kampong_chhnang: { en: "Kampong Chhnang", kh: "កំពង់ឆ្នាំង", region: "ភាគកណ្តាល", wiki: "Kampong_Chhnang_province" },
+            kampong_speu: { en: "Kampong Speu", kh: "កំពង់ស្ពឺ", region: "ភាគកណ្តាល", wiki: "Kampong_Speu_province" },
+            kampong_thom: { en: "Kampong Thom", kh: "កំពង់ធំ", region: "ភាគកណ្តាល", wiki: "Kampong_Thom_province" },
+            kampot: { en: "Kampot", kh: "កំពត", region: "ភាគខាងត្បូង", wiki: "Kampot_province" },
+            kandal: { en: "Kandal", kh: "កណ្តាល", region: "ភាគកណ្តាល", wiki: "Kandal_province" },
+            kep: { en: "Kep", kh: "កែប", region: "ភាគខាងត្បូង", wiki: "Kep_province" },
+            koh_kong: { en: "Koh Kong", kh: "កោះកុង", region: "ភាគខាងលិច", wiki: "Koh_Kong_province" },
+            kratie: { en: "Kratie", kh: "ក្រចេះ", region: "ភាគខាងកើត", wiki: "Kratie_province" },
+            mondulkiri: { en: "Mondulkiri", kh: "មណ្ឌលគិរី", region: "ភាគខាងកើត", wiki: "Mondulkiri_province" },
+            oddar_meanchey: { en: "Oddar Meanchey", kh: "ឧត្តរមានជ័យ", region: "ភាគខាងជើង", wiki: "Oddar_Meanchey_province" },
+            pailin: { en: "Pailin", kh: "ប៉ៃលិន", region: "ភាគខាងលិច", wiki: "Pailin_province" },
+            phnom_penh: { en: "Phnom Penh", kh: "ភ្នំពេញ", region: "រាជធានី", wiki: "Phnom_Penh" },
+            preah_vihear: { en: "Preah Vihear", kh: "ព្រះវិហារ", region: "ភាគខាងជើង", wiki: "Preah_Vihear_province" },
+            prey_veng: { en: "Prey Veng", kh: "ព្រៃវែង", region: "ភាគខាងត្បូង", wiki: "Prey_Veng_province" },
+            pursat: { en: "Pursat", kh: "ពោធិ៍សាត់", region: "ភាគខាងលិច", wiki: "Pursat_province" },
+            ratanakiri: { en: "Ratanakiri", kh: "រតនគិរី", region: "ភាគខាងកើត", wiki: "Ratanakiri_province" },
+            preah_sihanouk: { en: "Preah Sihanouk", kh: "ព្រះសីហនុ", region: "ភាគខាងត្បូង", wiki: "Preah_Sihanouk_province" },
+            siem_reap: { en: "Siem Reap", kh: "សៀមរាប", region: "ភាគខាងលិច", wiki: "Siem_Reap_province" },
+            stung_treng: { en: "Stung Treng", kh: "ស្ទឹងត្រែង", region: "ភាគខាងជើង", wiki: "Stung_Treng_province" },
+            svay_rieng: { en: "Svay Rieng", kh: "ស្វាយរៀង", region: "ភាគខាងត្បូង", wiki: "Svay_Rieng_province" },
+            takeo: { en: "Takeo", kh: "តាកែវ", region: "ភាគខាងត្បូង", wiki: "Takeo_province" },
+            tbong_khmum: { en: "Tbong Khmum", kh: "ត្បូងឃ្មុំ", region: "ភាគកណ្តាល", wiki: "Tbong_Khmum_province" }
+        };
+
+        var mapZoom = 1;
+
+        function zoomMap(level) {
+            if (level === 1.25) mapZoom = Math.min(mapZoom + 0.25, 2);
+            else if (level === 0.85) mapZoom = Math.max(mapZoom - 0.25, 0.75);
+            else mapZoom = 1;
+            document.getElementById("map-scale").style.transform = "scale(" + mapZoom + ")";
+        }
+
+        function toggleVideoFullscreen() {
+            var container = document.getElementById("video-container");
+            var video = document.getElementById("site-video");
+            if (!document.fullscreenElement) {
+                if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                } else if (video.webkitEnterFullscreen) {
+                    video.webkitEnterFullscreen();
+                } else if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                }
+            } else {
+                document.exitFullscreen();
+            }
+        }
+
+        function showProvince(key) {
+            var p = provinceData[key];
+            if (!p) return;
+            var wikiUrl = "https://en.wikipedia.org/wiki/" + p.wiki;
+            document.getElementById("province-box").style.display = "block";
+            document.getElementById("province-region").textContent = "តំបន់: " + p.region;
+            document.getElementById("province-title").textContent = p.en + " / " + p.kh;
+            document.getElementById("province-desc").textContent = p.kh + " (" + p.en + ") ស្ថិតនៅ" + p.region + " នៃប្រទេសកម្ពុជា។";
+            document.getElementById("province-wiki").href = wikiUrl;
+            document.getElementById("province-box").scrollIntoView({ behavior: "smooth", block: "nearest" });
+            window.open(wikiUrl, "_blank");
+        }
+
+        var provinceCenters = {
+            oddar_meanchey: { x: 200, y: 72 },
+            banteay_meanchey: { x: 228, y: 142 },
+            preah_vihear: { x: 368, y: 88 },
+            stung_treng: { x: 548, y: 108 },
+            ratanakiri: { x: 648, y: 158 },
+            siem_reap: { x: 268, y: 208 },
+            battambang: { x: 158, y: 248 },
+            pailin: { x: 102, y: 286 },
+            pursat: { x: 228, y: 312 },
+            koh_kong: { x: 68, y: 428 },
+            kampong_thom: { x: 428, y: 252 },
+            kratie: { x: 542, y: 298 },
+            mondulkiri: { x: 648, y: 332 },
+            kampong_chhnang: { x: 308, y: 378 },
+            kampong_cham: { x: 468, y: 402 },
+            tbong_khmum: { x: 558, y: 372 },
+            kampong_speu: { x: 308, y: 472 },
+            kandal: { x: 408, y: 472 },
+            phnom_penh: { x: 422, y: 492 },
+            prey_veng: { x: 508, y: 468 },
+            svay_rieng: { x: 618, y: 458 },
+            takeo: { x: 408, y: 552 },
+            kampot: { x: 308, y: 552 },
+            preah_sihanouk: { x: 208, y: 542 },
+            kep: { x: 338, y: 592 }
+        };
+
+        var provinceKeys = Object.keys(provinceCenters);
+        var mapHitIndex = null;
+        var mapHitWidth = 799;
+        var mapHitHeight = 719;
+
+        function buildMapHitIndex(image) {
+            var canvas = document.createElement("canvas");
+            canvas.width = mapHitWidth;
+            canvas.height = mapHitHeight;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(image, 0, 0, mapHitWidth, mapHitHeight);
+            var img = ctx.getImageData(0, 0, mapHitWidth, mapHitHeight);
+            var data = img.data;
+            var index = new Uint8Array(mapHitWidth * mapHitHeight);
+            var centers = provinceKeys.map(function (key) {
+                return { key: key, x: provinceCenters[key].x, y: provinceCenters[key].y };
+            });
+
+            for (var y = 0; y < mapHitHeight; y++) {
+                for (var x = 0; x < mapHitWidth; x++) {
+                    var i = (y * mapHitWidth + x) * 4;
+                    if (data[i] > 248 && data[i + 1] > 248 && data[i + 2] > 248) {
+                        index[y * mapHitWidth + x] = 0;
+                        continue;
+                    }
+                    var best = 0;
+                    var bestDist = Infinity;
+                    for (var c = 0; c < centers.length; c++) {
+                        var dx = x - centers[c].x;
+                        var dy = y - centers[c].y;
+                        var dist = dx * dx + dy * dy;
+                        if (dist < bestDist) {
+                            bestDist = dist;
+                            best = c + 1;
+                        }
+                    }
+                    index[y * mapHitWidth + x] = best;
+                }
+            }
+            mapHitIndex = index;
+        }
+
+        function getSvgPoint(svg, evt) {
+            var pt = svg.createSVGPoint();
+            pt.x = evt.clientX;
+            pt.y = evt.clientY;
+            return pt.matrixTransform(svg.getScreenCTM().inverse());
+        }
+
+        function lookupProvince(x, y) {
+            if (!mapHitIndex) return null;
+            var px = Math.max(0, Math.min(mapHitWidth - 1, Math.floor(x)));
+            var py = Math.max(0, Math.min(mapHitHeight - 1, Math.floor(y)));
+            var id = mapHitIndex[py * mapHitWidth + px];
+            if (!id) return null;
+            return provinceKeys[id - 1];
+        }
+
+        (function initMapInteraction() {
+            var svg = document.getElementById("cambodia-map");
+            var hitLayer = document.getElementById("map-hit-layer");
+            var mapLabel = document.getElementById("map-label");
+            var defaultLabel = "ចង្អុល ឬចុចលើខេត្តនៅលើផែនទី";
+            var activeKey = null;
+            var mapImage = new Image();
+            mapImage.src = "cambodia-map-clear.png";
+            mapImage.onload = function () {
+                buildMapHitIndex(mapImage);
+            };
+
+            function setActiveProvince(key) {
+                if (key === activeKey) return;
+                activeKey = key;
+                if (key) {
+                    var p = provinceData[key];
+                    mapLabel.textContent = p.kh + " / " + p.en + " — " + p.region;
+                } else {
+                    mapLabel.textContent = defaultLabel;
+                }
+            }
+
+            hitLayer.addEventListener("mousemove", function (evt) {
+                var pt = getSvgPoint(svg, evt);
+                setActiveProvince(lookupProvince(pt.x, pt.y));
+            });
+
+            hitLayer.addEventListener("mouseleave", function () {
+                setActiveProvince(null);
+            });
+
+            hitLayer.addEventListener("click", function (evt) {
+                var pt = getSvgPoint(svg, evt);
+                var key = lookupProvince(pt.x, pt.y);
+                if (key) showProvince(key);
+            });
+        })();
+    </script>
+</body>
 </html>
-
